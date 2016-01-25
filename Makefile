@@ -18,7 +18,7 @@ DEFINES+= -DNO_SHARED_LIBS
 endif
 
 #options if you have a bind>=4.9.4 libresolv (or, maybe, glibc)
-LDLIBS=-lresolv
+#LDLIBS=-lresolv
 ADDLIB=
 
 #options for decnet
@@ -35,7 +35,7 @@ YACCFLAGS = -d -t -v
 
 LDLIBS += -L../lib -lnetlink -lutil
 
-SUBDIRS=lib ip tc misc netem genl
+SUBDIRS=lib ip tc
 
 LIBNETLINK=../lib/libnetlink.a ../lib/libutil.a
 
